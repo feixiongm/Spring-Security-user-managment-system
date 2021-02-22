@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+</head>
+<body>
+<h2>login page</h2>
+<h3>form login</h3>
+<form action="/authentication/form" method="post">
+    <table>
+        <tr>
+            <td>Username:</td>
+            <td><input type="text" name="username"></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input type="password" name="password"></td>
+        </tr>
+        <tr>
+            <td>Image Code:</td>
+            <td>
+                <input type="text" name="imageCode">
+                <img src="/code/image?width=200">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><input name="remember-me" type="checkbox" value="true">Remember me</td>
+        </tr>
+        <tr>
+            <td colspan="2"><button type="submit">Login</button></td>
+        </tr>
+    </table>
+</form>
+
+<h3>message login</h3>
+<form action="/authentication/mobile" method="post">
+    <table>
+        <tr>
+            <td>Phone Number:</td>
+            <td><input type="text" name="username" value="2027187348"></td>
+        </tr>
+
+        <tr>
+            <td>Message Code:</td>
+            <td>
+                <input type="text" name="imageCode">
+                <a href="/code/sms?mobile=2027187348">send validate code</a>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2"><button type="submit">Login</button></td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>

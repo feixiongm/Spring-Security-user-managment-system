@@ -1,0 +1,22 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.spring.security.core.properties.SecurityProperties",
+      "name": "spring.security",
+      "type": "com.spring.security.core.properties.SecurityProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.spring.security.core.properties.SecurityProperties",
+      "name": "spring.security.browser",
+      "type": "com.spring.security.core.properties.BrowserProperties"
+    },
+    {
+      "sourceType": "com.spring.security.core.properties.SecurityProperties",
+      "name": "spring.security.code",
+      "type": "com.spring.security.core.properties.ValidateCodeProperties"
+    }
+  ]
+}
